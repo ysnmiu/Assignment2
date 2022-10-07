@@ -1,0 +1,42 @@
+<!-- Created: Yip Michelle Sze Nga
+Student Number: 301226102
+Subject: COMP229 - Web Application Development
+Date: 10/08/2022
+Institution: Centennial College-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%- include('./partials/fav.ejs') %>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<!--body-->
+<body>
+
+<%- include('./partials/header.ejs') %>
+
+
+<div class="aboutme">
+  <div class="image">
+    <img src="/img/profile.jpg" height="423" width="311"/>
+</div>
+
+<div class="text">
+    <h3>About me</h3>
+    <p>Hello! My name is Michelle who came from Hong Kong. After graduating from Fashion Branding course and work for a few years in Hong Kong, I have decided to move to Toronto for a fresh start!
+      I am currently at the third semester of Software Engineering Technician Course at Centannial College.  Although the course can be very challenging, solving problems and getting to see what I have created is rewarding. 
+    </p>
+    <p>
+    Fashion is always been my passion, I can have fun with different styles just like building a website with different css and design! In the future, I wish I could combine my knowledge of Fashion with the skills of coding and come up something new for people who have the same interests as me.
+    </p>
+      <p><button class="button"><a href="https://drive.google.com/file/d/1h9EVN7ToWlX5TiomI1CFxh7Zw4vIeYzI/view">Click here for my resume</a></button></p>
+     </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>
+
+</body>

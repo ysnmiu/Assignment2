@@ -1,0 +1,48 @@
+<!-- Created: Yip Michelle Sze Nga
+Student Number: 301226102
+Subject: COMP229 - Web Application Development
+Date: 10/06/2022
+Institution: Centennial College-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%- include('./partials/fav.ejs') %>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<%- include('./partials/header.ejs') %>
+<div class="service">
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+ 
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/code.jpg" style="width:100%" height="510px">
+    <div class="text1">Programming</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/data.jpg" style="width:100%" height="510px">
+    <div class="text1">Data Analyst</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/problem.jpg" style="width:100%" height="510px">
+    <div class="text1">Problem Solving</div>
+  </div>
+
+</div>
+<br>
+</div>
+
+<%- include('./partials/footer.ejs') %>
+<script src="js/service.js"></script>
+</body>

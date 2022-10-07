@@ -1,0 +1,77 @@
+<!-- Created: Yip Michelle Sze Nga
+Student Number: 301226102
+Subject: COMP229 - Web Application Development
+Date: 10/06/2022
+Institution: Centennial College-->
+
+<!-- Header--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Main Nav bar  -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="/">
+      <img src="/img/logo.jpg" alt="logo" width="300">
+    </a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <% if (title == "Home") { %>
+            <a class="nav-link active" href="/">
+        <% } else { %>
+            <a class="nav-link" href="/">
+        <% } %>            
+            <i class="fas fa-home"></i> Home </a>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <% if (title == "About") { %>
+            <a class="nav-link active" href="/about">
+        <% } else { %>
+            <a class="nav-link" href="/about">
+        <% } %>            
+          <i class="fas fa-project-diagram"></i> About </a>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <% if (title == "Projects") { %>
+            <a class="nav-link active" href="/projects">
+        <% } else { %>
+            <a class="nav-link" href="/projects">
+        <% } %>            
+          <i class="fas fa-project-diagram"></i> Projects </a>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <% if (title == "Service") { %>
+            <a class="nav-link active" href="/service">
+        <% } else { %>
+            <a class="nav-link" href="/service">
+        <% } %>            
+            <i class="fas fa-user"></i> Service </a>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <% if (title == "Contact") { %>
+            <a class="nav-link active" href="/contact">
+        <% } else { %>
+            <a class="nav-link" href="/contact">
+        <% } %>            
+            <i class="fas fa-user"></i> Contact </a>
+        </a>
+      </li>
+    </ul>
+  </nav>

@@ -1,0 +1,34 @@
+<!-- Created: Yip Michelle Sze Nga
+Student Number: 301226102
+Subject: COMP229 - Web Application Development
+Date: 10/08/2022
+Institution: Centennial College-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%- include('./partials/fav.ejs') %>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<!--body-->
+
+<body>
+<%- include('./partials/header.ejs') %>
+
+<div>
+<p><img alt="banner" height="467%" src="img/TorontoBanner.jpg" width="100%" /></p>
+</div>
+
+<div class="aboutme">
+  <div>
+    <h1 class="text">Mission : "A world of advancing communities,utiilzing technology for a better life."</h1>
+    <p><button class="button button1"><a href="/about">Get to know me more!</a></button></p>
+</div></div>
+
+<%- include('./partials/footer.ejs') %>
+</body>

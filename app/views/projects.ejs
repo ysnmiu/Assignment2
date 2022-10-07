@@ -1,0 +1,56 @@
+<!-- Created: Yip Michelle Sze Nga
+Student Number: 301226102
+Subject: COMP229 - Web Application Development
+Date: 10/08/2022
+Institution: Centennial College-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%- include('./partials/fav.ejs') %>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<!--body-->
+
+<body>
+<%- include('./partials/header.ejs') %>
+
+<div class="projects">
+  <a target="_blank" href="/projects">
+    <img id="imgProject" src="img/real.jpg" alt="real" style="width:1000px"/>
+  </a>
+  <p>1.Real Estate Project<br>
+  This is an individual term project which is a website for a real estate company. It consists 7 pages including Home Page,3 Property Listing Page, Available Properties For Sell, Contact Form , Site Map and Credit Page. 
+  I have learnt to build tables,form,add google map and create nav bar. 
+</p>
+  </div>
+  <br></br>
+
+  <div class="projects">
+    <a target="_blank" href="/projects">
+      <img id="imgProject" src="img/jeep.jpg" alt="jeep" style="width:1000px"/>
+    </a>
+    <p>2.Car Project<br>
+      This is an individual assignment in my first semester when I first learned how to add zoom in page, add favicon , add links on the map , redirect to other pages and create tables using Expression Web.
+    </p>
+
+    </div>
+    <br></br>
+
+    <div class="projects">
+      <a target="_blank" href="/projects">
+        <img id="imgProject" src="img/bmr.jpg" alt="bmr" style="width:1000px"/>
+      </a>
+      <p>3.BMR Calculator<br>
+        I have created a calorie intake calculator based on the Harris-Benedict equation to determind the daily energy needs
+        based on age, sex, height etc. To calculates the calroie intake based on user input, I have linked the html page with JaveScript file. 
+      </p>
+      </div>
+      <br></br>
+  
+      <%- include('./partials/footer.ejs') %>
+</body>
