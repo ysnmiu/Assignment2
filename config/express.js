@@ -8,11 +8,11 @@
 var config = require('./env/development')
 var session = require('express-session')
 var express = require('express')
+var mongoose = require('mongoose')
 var morgan = require('morgan')
 var compress = require('compression')
 var bodyParser = require('body-parser')
 var methodOverride = require('method-override')
-
 
 module.exports = function() {
     var app = express()
@@ -42,9 +42,5 @@ module.exports = function() {
     app.use(express.static('./public'))
 
     require('../app/routes/index.server.routes.js')(app)
-    //require('../app/routes/about.server.routes.js')(app)
-    //require('../app/routes/contact.server.routes.js')(app)
-    //require('../app/routes/projects.server.routes.js')(app)
-    //require('../app/routes/service.server.routes.js')(app)
-    return app
-}
+    
+    return app}

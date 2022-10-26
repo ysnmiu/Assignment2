@@ -1,0 +1,35 @@
+<!-- Created: Yip Michelle Sze Nga
+Student Number: 301226102
+Subject: COMP229 - Web Application Development
+Date: 10/08/2022
+Institution: Centennial College-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%- include('./partials/fav.ejs') %>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<!--body-->
+<body>
+
+<%- include('./partials/header.ejs') %>
+
+<main class="login">
+  
+    <div class="offset-md-4 col-md-4">
+      <h1>Please Login</h1>
+      <form action="/login" method="POST">
+        <%- include('./partials/_user_login_fields') %>
+      </form>
+    </div>
+  </div>
+</main>
+
+<%- include('./partials/footer.ejs') %>
+
+</body>

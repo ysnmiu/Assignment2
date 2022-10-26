@@ -30,7 +30,7 @@ Institution: Centennial College-->
         <% } else { %>
             <a class="nav-link" href="/">
         <% } %>            
-            <i class="fas fa-home"></i> Home </a>
+           Home </a>
         </a>
       </li>
 
@@ -40,7 +40,7 @@ Institution: Centennial College-->
         <% } else { %>
             <a class="nav-link" href="/about">
         <% } %>            
-          <i class="fas fa-project-diagram"></i> About </a>
+          </i> About </a>
         </a>
       </li>
 
@@ -50,7 +50,7 @@ Institution: Centennial College-->
         <% } else { %>
             <a class="nav-link" href="/projects">
         <% } %>            
-          <i class="fas fa-project-diagram"></i> Projects </a>
+         Projects </a>
         </a>
       </li>
 
@@ -60,7 +60,7 @@ Institution: Centennial College-->
         <% } else { %>
             <a class="nav-link" href="/service">
         <% } %>            
-            <i class="fas fa-user"></i> Service </a>
+            Service </a>
         </a>
       </li>
 
@@ -70,7 +70,28 @@ Institution: Centennial College-->
         <% } else { %>
             <a class="nav-link" href="/contact">
         <% } %>            
-            <i class="fas fa-user"></i> Contact </a>
+           Contact </a>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <% if (title == "List") { %>
+            <a class="nav-link active" href="/business">
+        <% } else { %>
+            <a class="nav-link" href="/business">
+        <% } %>            
+            List </a>
+        </a>
+      </li>
+      
+    
+      <li class="nav-item">
+        <% if (title == "Login") { %>
+            <a class="nav-link active" href="/login">
+        <% } else { %>
+            <a class="nav-link" href="/login">
+        <% } %>            
+           Login </a>
         </a>
       </li>
     </ul>
